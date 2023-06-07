@@ -152,6 +152,9 @@ At first, `npm run setup` is a command seed the initial data. Range of the initi
 At second, `npm run test` is a command running the test automation program. The test automation program not only seeds the initial data, but also generates sample data during the testing. Also, you've to know that, whenever run the `npm run test` command, the local DB would be reset. Therefore, you've consider it carefully, whenever calling the `npm run test` command.
 
 ```bash
+docker-compose up db
+npm run schema postgres example
+
 # Seed initial data
 # minimum data to running the local backend server
 npm run setup 
@@ -461,3 +464,4 @@ You know what? All of CI processes, like installing required programs into the c
 
 ### 5.3. Related Repositories
 > Write the related repositories down.
+
